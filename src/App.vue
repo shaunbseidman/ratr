@@ -37,6 +37,7 @@
     </div>
   </nav>
 
+
   <router-view/>
 </div>
 </template>
@@ -45,7 +46,11 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+
+    }
+  
 }
 </script>
 

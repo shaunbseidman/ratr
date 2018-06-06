@@ -10,6 +10,11 @@ import BootstrapVue from 'bootstrap-vue'
 import VueAxios from 'vue-axios'
 import VueAuthenticate from 'vue-authenticate'
 import axios from 'axios';
+import 'vue-loaders/dist/vue-loaders.css';
+import * as VueLoaders from 'vue-loaders';
+
+Vue.use(VueLoaders);
+
 
 Vue.use(VueAxios, axios)
 Vue.use(BootstrapVue);
