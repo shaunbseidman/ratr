@@ -1,6 +1,6 @@
-# ratr
+# RATR
 
-> A Vue.js project
+RATR allows you to see user ratings for consumer goods for free.  Just sign up, rate 5 individual items per month, and enjoy free ratings of all goods.   
 
 ## Build Setup
 
@@ -17,5 +17,15 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+### Authors
+Shaun Seidman
+https://www.shaunseidman.com
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Chance Scott-Burke
+https://www.chancescottburke.com
+
+### License
+MIT
+
+### Deployed
+http://ratr.surge.sh
