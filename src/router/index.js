@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import splash from '@/components/splash'
 import signup from '@/components/signup'
+import login from '@/components/login'
 import BootstrapVue from 'bootstrap-vue'
 import VueAxios from 'vue-axios'
 import VueAuthenticate from 'vue-authenticate'
@@ -11,6 +12,7 @@ import axios from 'axios';
 Vue.use(BootstrapVue);
 Vue.component('splash', splash)
 Vue.component('signup', signup)
+Vue.component('login', login)
 
 Vue.use(Router)
 

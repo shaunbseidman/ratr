@@ -7,7 +7,6 @@
   </template>
   <template slot="lead">
     Rate shit here
-
   </template>
   <hr class="my-4">
   <p>
@@ -21,8 +20,9 @@
 
 <script>
 export default {
+  name: 'splash'
 }
-</script>
+</script scoped>
 
 <style lang="css">
 </style>

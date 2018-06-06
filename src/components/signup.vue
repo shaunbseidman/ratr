@@ -1,5 +1,8 @@
 <template lang="html">
   <div class="signUp">
+    <router-link :to="{name: 'HelloWorld'}">
+      <button type="button" name="button">Back</button>
+    </router-link>
     <h1>this is a sign up page</h1>
   </div>
 </template>

@@ -34,12 +34,11 @@
     </b-collapse>
   </b-navbar>
 
-  <splash>
-  </splash>
+  <splash></splash>
+  <login></login>
   <router-link :to="{name: 'signup'}">
     <button type="button" name="button">Sign Up</button>
   </router-link>
-  <!-- <signup></signup> -->
   <router-view/>
 </div>
 </template>
