@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <router-link :to="{ name: 'HelloWorld'}">
+    <router-link :to="{ name: 'splash'}">
       <a class="navbar-brand" href="#">RATR</a>
     </router-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,11 @@
         <li class="nav-item">
           <router-link :to="{ name: 'about'}">
             <a class="nav-link" href="#">About</a>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'contact'}">
+            <a class="nav-link" href="#">Contact</a>
           </router-link>
         </li>
       </ul>

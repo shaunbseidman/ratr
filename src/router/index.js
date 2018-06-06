@@ -5,6 +5,7 @@ import splash from '@/components/splash'
 import signup from '@/components/signup'
 import login from '@/components/login'
 import about from '@/components/about'
+import contact from '@/components/contact'
 import BootstrapVue from 'bootstrap-vue'
 import VueAxios from 'vue-axios'
 import VueAuthenticate from 'vue-authenticate'
@@ -16,6 +17,7 @@ Vue.component('splash', splash)
 Vue.component('signup', signup)
 Vue.component('login', login)
 Vue.component('about', about)
+Vue.component('contact', contact)
 
 Vue.use(Router)
 
@@ -23,8 +25,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'splash',
+      component: splash
     },
     {
       path:'/signup',
@@ -45,6 +47,12 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: about
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: contact
     }
+
   ]
 })
