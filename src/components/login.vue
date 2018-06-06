@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="login">
-    <button v-on:click="itWorks" type="button" name="button">login</button>
+    <button @click="login()">Login</button>
+    <button @click="register()">Register</button>
   </div>
 </template>
 
@@ -11,10 +12,18 @@ export default {
     return{}
   },
   methods: {
-    itWorks(){
-      alert('fart')
-    }
-  }
+     login: function () {
+       this.$auth.login({ email, password }).then(function () {
+         // Execute application logic after successful login
+       })
+     },
+
+     register: function () {
+       this.$auth.register({ name, email, password }).then(function () {
+         // Execute application logic after successful registration
+       })
+     }
+   }
 }
 </script>
 

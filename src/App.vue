@@ -1,44 +1,37 @@
 <template>
 <div id="app">
-  <b-navbar toggleable="md" type="dark" variant="info">
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
-    <b-collapse is-nav id="nav_collapse">
-      <b-navbar-nav>
-        <!-- <router-link :to="{name: 'splash'}">
-          <b-nav-item>Home</b-nav-item>
-        </router-link> -->
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search" />
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form>
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown right>
-          <!-- Using button-content slot -->
-          <template slot="button-content">
-          <em>User</em>
-        </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Signout</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <router-link :to="{ name: 'HelloWorld'}">
+      <a class="navbar-brand" href="#">RATR</a>
+    </router-link>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link :to="{ name: 'signup'}">
+            <a class="nav-link" href="#">Sign Up</a>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'login'}">
+            <a class="nav-link" href="#">Log In</a>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'about'}">
+            <a class="nav-link" href="#">About</a>
+          </router-link>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
 
-  <splash></splash>
-  <login></login>
-  <router-link :to="{name: 'signup'}">
-    <button type="button" name="button">Sign Up</button>
-  </router-link>
   <router-view/>
 </div>
 </template>

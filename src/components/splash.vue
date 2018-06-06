@@ -22,7 +22,7 @@
 export default {
   name: 'splash'
 }
-</script scoped>
+</script>
 
-<style lang="css">
+<style scoped lang="css">
 </style>
